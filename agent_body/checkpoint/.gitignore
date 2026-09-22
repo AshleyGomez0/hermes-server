@@ -1,0 +1,6 @@
+# Local runtime store for hermes-server-workspace.
+
+# Per-piece Python build / test artifacts (kept out of git; regenerated
+# at test time).
+**/__pycache__/
+**/.pytest_cache/
