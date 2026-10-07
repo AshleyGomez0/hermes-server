@@ -16,3 +16,12 @@ Contents:
 Reversibility: deletion of any sibling directory has no effect on Hermes,
 MiniMax, IA-VISION, SUINI, or the GitHub-tracked canon. A full reversal is
 removing the `agent_body` directory tree.
+
+## Official Control Plane workflow
+
+The authoritative operating policy for Ashley's Control Plane is versioned at:
+
+- `runbooks/CONTROL_PLANE_OFFICIAL.md`
+- `runbooks/PROJECT_CONSUMER_CONTRACT.md`
+
+Runtime artifacts under `agent_body/` do not override those policies.
