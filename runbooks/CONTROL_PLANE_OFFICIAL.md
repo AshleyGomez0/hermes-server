@@ -192,8 +192,25 @@ If a Control Plane regression is verified:
 
 ## 12. Certified baseline
 
+Canonical implementation repository:
+`AshleyGomez0/hermes-agent`
+
 Certification candidate:
 `46ec240489324893dd01da54ae413d74851c9cbd`
+
+Resolvable commit:
+`https://github.com/AshleyGomez0/hermes-agent/commit/46ec240489324893dd01da54ae413d74851c9cbd`
+
+Durable certification carrier:
+`https://github.com/AshleyGomez0/hermes-agent/pull/2`
+
+Durable evidence comments:
+- exact candidate verification and CI classification:
+  `https://github.com/AshleyGomez0/hermes-agent/pull/2#issuecomment-6045222199`
+- independent exact-SHA review + Ashley runtime/Remote Desktop evidence:
+  `https://github.com/AshleyGomez0/hermes-agent/pull/2#issuecomment-6045457326`
+- final Factory + Windows supervisor canaries and certification flags:
+  `https://github.com/AshleyGomez0/hermes-agent/pull/2#issuecomment-6045512449`
 
 Certification evidence established:
 - focused Windows/control-plane tests: 89 PASS;
