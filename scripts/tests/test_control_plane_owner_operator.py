@@ -7,6 +7,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[2]
 POLICY = ROOT / "runbooks" / "CONTROL_PLANE_OFFICIAL.md"
 ENTRY = ROOT / "AGENTS.md"
+HERMES_ENTRY = ROOT / "HERMES.md"
 
 
 class OwnerOperatorContract(unittest.TestCase):
@@ -14,9 +15,11 @@ class OwnerOperatorContract(unittest.TestCase):
     def setUpClass(cls):
         cls.policy = POLICY.read_text(encoding="utf-8")
         cls.entry = ENTRY.read_text(encoding="utf-8")
+        cls.hermes_entry = HERMES_ENTRY.read_text(encoding="utf-8")
 
     def test_versioned_entrypoint_points_to_canonical_policy(self):
         self.assertIn("runbooks/CONTROL_PLANE_OFFICIAL.md", self.entry)
+        self.assertIn("runbooks/CONTROL_PLANE_OFFICIAL.md", self.hermes_entry)
         self.assertIn("## 14. OWNER DIRECTIVE 2026-10-08", self.policy)
 
     def test_direct_execution_not_manual_human_dispatch(self):
